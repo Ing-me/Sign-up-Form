@@ -1,0 +1,60 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../images/bg.png");
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 80vw;
+}
+.left-side{
+    background: no-repeat center url("../images/stairs.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.left-side .logo-container{
+    background: #000;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    opacity: .8;
+}
+.left-side .logo-container > img{
+    width: clamp(50px, 20%, 100px);
+}
+.left-side .logo-container > p{
+    color: #fff;
+    font-size: clamp(.7rem, 5vw, 3rem);
+    font-weight: 800;
+}
+.left-side .author-image{
+    position: absolute;
+    left: 10%;
+    bottom: 1%;
+    color: green;
+    font-size: clamp(.5rem, 1vw, 1rem);
+    font-weight: bold;
+}
+.right-side{
+    background: #fff;
+    width: 60%;
+    opacity: .8;
+}
