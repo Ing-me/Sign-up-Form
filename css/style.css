@@ -122,17 +122,11 @@ form input{
     cursor: pointer;
 }
 
-@media (min-width: 1260px){
+@media (min-width: 1024px){
     .form-light-section, .form-button {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
      
-}
-@media (min-width: 980px){ 
-    .form-light-section, .form-button {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
 }
  
