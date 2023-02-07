@@ -55,12 +55,24 @@ body{
 }
 .right-side{
     /* background: #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(238, 240, 240);
     width: 60%;
     /* opacity: .8; */
 }
+.text{
+    padding: 40px;
+    font-size: 1.35rem;
+    font-weight: 600;
+} .text > p + p{
+    margin-top: 25px;
+}
 .form{
     margin-top: 20px;
+    width: 100%;
 }
 .form-light-section{
     width: 100%;
@@ -79,6 +91,24 @@ body{
     margin: 10px 40px;
     font-size: .6rem;
     font-weight: 800;
+}
+.form-body .form-group input[type="text"]:invalid,
+ input[type="tel"]:invalid,
+ input[type="email"]:invalid,
+ input[type="password"]:invalid{
+    border-color: crimson;
+}
+.form-body .form-group input[type="text"]:valid,
+ input[type="tel"]:valid,
+ input[type="email"]:valid,
+ input[type="password"]:valid{
+    border-color: green;
+}
+ 
+.message{
+    color: red;
+    font-style: italic;
+    font-size: .7rem;
 }
  
 .form-header p{
