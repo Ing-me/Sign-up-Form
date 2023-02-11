@@ -14,29 +14,32 @@ body{
 .container{
     /* display: flex;
     flex-wrap: wrap; */
-    width: 65vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 60vw;
     height: 100vh;
 }
 .left-side{
     background: no-repeat center url("../images/stairs.jpg");
     background-size: cover;
-    height: 100%;
-    /* width: 40%; */
-
+    height: 500px;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
     position: relative;
 }
 .left-side .logo-container{
     background: #000;
-    /* width: 100%; */
+    width: 100%;
+    /* height: 15%; */
     position: absolute;
-    top: 40%;
+    top: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 7px;
-    opacity: .8;
+    opacity: .6;
 }
 .left-side .logo-container > img{
     width: clamp(50px, 20%, 100px);
@@ -63,6 +66,7 @@ body{
     background-color: rgb(238, 240, 240);
     /* width: 60%; */
     /* opacity: .8; */
+    height: 100%;
 }
 .text{
     padding: 40px;
@@ -153,7 +157,7 @@ form input{
     cursor: pointer;
 }
 
-@media (min-width: 1280px){
+@media (min-width: 1024px){
     .form-light-section, .form-button {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
@@ -161,8 +165,13 @@ form input{
     .container {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        grid-template-rows: repeat(1, 1fr);
+        grid-template-rows: 1fr;
     }
-     
+    .left-side {
+        height: 100%;
+    }
+   
 }
+
+
  
