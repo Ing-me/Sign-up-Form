@@ -24,9 +24,9 @@
         <div class="right-side">
             <div class="text">
                 <p>This is not a real line service! You know you need something like this in your life
-                    to help you realize your deepest dreams. Sign up <span>now</span> to get started.
+                    to help you realize your deepest dreams. Sign up <em>now</em> to get started.
                 </p>
-                <p>You <span>know</span> you want to.</p>
+                <p>You <em>know</em> you want to.</p>
             </div>
             <div class="form">
                 <form action="#">
@@ -38,31 +38,33 @@
                             <div class="form-group"></div>
                             <div class="form-group">
                                 <label for="first-name">FIRST NAME</label>
-                                <input type="text" placeholder="Thor">
+                                <input type="text" placeholder="Thor" minlength="3" maxlength="25" required>
                             </div>
                             <div class="form-group">
                                 <label for="last-name">LAST NAME</label>
-                                <input type="text" placeholder="Odinson">
+                                <input type="text" placeholder="Odinson" minlength="3" maxlength="30" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">EMAIL</label>
-                                <input type="email" placeholder="mail@gmail.com">
+                                <input type="email" placeholder="mail@gmail.com" required>
                             </div>
                             <div class="form-group">
                                 <label for="phone">PHONE</label>
-                                <input type="tel" placeholder="123 123 1234">
+                                <input type="tel" placeholder="123 123 1234" required>
                             </div>
                             <div class="form-group">
                                 <label for="password">PASSWORD</label>
-                                <input type="password">
+                                <input type="password" name="password" id="password" minlength="8" maxlength="20" required>
+                                <span class="message"></span>
                             </div>
                             <div class="form-group">
                                 <label for="confirm-password">CONFIRM PASSWORD</label>
-                                <input type="password">
+                                <input type="password" id="confirm-password" minlength="8" maxlength="20" required>
+                                <span class="message"></span>
                             </div>
                         </div>
                         <div class="form-group form-button">
-                            <button type="submit">Create Account</button>
+                            <button type="submit" id="submit">Create Account</button>
                         </div>
                         <div class="form-group"></div>
                         <div class="form-group form-footer">
@@ -74,5 +76,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
